@@ -16,7 +16,7 @@ export default {
           bookTitle:"",
           bookAuthor: "",
           finishedReading:false,
-          ownerShip: []  
+          ownership: []  
     },
   };
   },
