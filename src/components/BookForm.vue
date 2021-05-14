@@ -18,13 +18,13 @@ export default {
           finishedReading:false,
           ownerShip: []  
     },
-  },
+  };
   methods: {
     bookSubmit(bookTitle, bookAuthor) {
       this.$emit("addBook", bookTitle, bookAuthor);
     }
   }
-};
+}
 </script>
 
 <style>
