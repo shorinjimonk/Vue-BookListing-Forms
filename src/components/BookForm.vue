@@ -2,7 +2,9 @@
   <form v-on:submit.prevent="bookSubmit(bookTitle, bookAuthor)" class="" action="#" method="post">
     <input v-model="bookTitle" type="text" name="title" value="" placeholder="Book Title">
     <input v-model="bookAuthor" type="text" name="author" value="" placeholder="Book Author">
-    <input v-model="finishedReading" type="checkbox" name="author" value="" placeholder="Book Author">
+    <div>
+      <input v-model="finishedReading" type="checkbox" name="finished reading" value="" placeholder="finished reading">
+    </div>
     <button type="submit" name="button">Add Book</button>
   </form>
 </template>
