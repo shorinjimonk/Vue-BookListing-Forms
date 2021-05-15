@@ -39,6 +39,7 @@ export default {
     BookItem,
     BookForm
   },
+  computed,
   methods: {
     appendBook(bookData) {
       this.books.push({ title: bookData.bookTitle, author: bookData.bookAuthor, finishedReading: bookData.finishedReading, ownership: bookData.ownership });
