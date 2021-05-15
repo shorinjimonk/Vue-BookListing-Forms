@@ -23,7 +23,8 @@ export default {
         { title: "Self-Reliance", author: "Ralph Waldo Emerson", finishedReading: true, ownership: "borrowed" },
         { title: "American Gods", author: "Neil Gaiman", finishedReading: false, ownership: "bought" },
         { title: "Amusing Ourselves to Death", author: "Neil Postman", finishedReading: true, ownership: "borrowed" }
-      ]
+      ],
+      filters: ["bought","borrowed"]
     };
   },
   components: {
