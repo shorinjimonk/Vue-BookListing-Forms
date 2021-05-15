@@ -6,6 +6,7 @@
     </ul>
     <hr>
     <h2>Filtered Books By Ownership</h2>
+    <br><hr>
     <book-form @addBook='appendBook'></book-form>
   </div>
 </template>
