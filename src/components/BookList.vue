@@ -45,14 +45,15 @@ export default {
   },
   computed: {
     filteredBooks(){
-     return _.filter(this.books, ["ownership", this.holding]);
+     return _.filter(this.boosks, ["ownership", this.holding]);
     }
   },
   methods: {
     appendBook(bookData) {
       this.books.push({ title: bookData.bookTitle, author: bookData.bookAuthor, finishedReading: bookData.finishedReading, ownership: bookData.ownership });
     }
-  }
+  },
+  searchInput:""
 };
 </script>
 
