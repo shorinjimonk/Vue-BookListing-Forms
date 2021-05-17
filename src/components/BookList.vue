@@ -49,8 +49,18 @@ export default {
   computed: {
     filteredBooks(){
      return _.filter(this.boosks, ["ownership", this.holding]);
+    }, 
+    searchBooks(){
+      const searchFilter = book => {
+        return book.title.toLowerCase().match(this.searchInput);
+      }
     }
+ 
   },
+
+ 
+
+
   methods: {
     appendBook(bookData) {
       this.books.push({ title: bookData.bookTitle, author: bookData.bookAuthor, finishedReading: bookData.finishedReading, ownership: bookData.ownership });
