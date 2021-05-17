@@ -52,7 +52,7 @@ export default {
     }, 
     searchedBooks(){
       const searchFilter = book => {
-        return book.title.toLowerCase().match(this.searchInput);
+        return book.title.toLowerCase().match(this.searchInput.toLowerCase());
       }
     }
  
