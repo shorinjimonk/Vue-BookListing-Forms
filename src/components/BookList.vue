@@ -1,6 +1,8 @@
 <template>
 <div>
     <h1>{{title}}</h1>
+
+    <input type="text" v-model="searchInput" placeholder="Search Books "/>
     <ul>
       <book-item v-for='book in books' :key='book.id' :book='book'></book-item>
     </ul>
