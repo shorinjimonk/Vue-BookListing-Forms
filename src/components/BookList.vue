@@ -4,7 +4,7 @@
 
     <input type="text" v-model="searchInput" placeholder="Search Books "/>
     <ul>
-      <book-item v-for='book in books' :key='book.id' :book='book'></book-item>
+      <book-item v-for='book in searchedBooks' :key='book.id' :book='book'></book-item>
     </ul>
     <hr>
     <h2>Filtered Books By Ownership</h2>
