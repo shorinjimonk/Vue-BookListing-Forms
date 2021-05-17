@@ -50,7 +50,7 @@ export default {
     filteredBooks(){
      return _.filter(this.boosks, ["ownership", this.holding]);
     }, 
-    searchBooks(){
+    searchedBooks(){
       const searchFilter = book => {
         return book.title.toLowerCase().match(this.searchInput);
       }
